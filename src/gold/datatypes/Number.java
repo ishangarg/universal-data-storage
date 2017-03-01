@@ -16,9 +16,9 @@ public class Number {
 				while(current.getNext() != null){
 					current = (NumberElement) current.getNext();
 				}
+				current.setNext(new NumberElement(Integer.parseInt("" + num.charAt(i))));
 			}
-		}
-		
+		}		
 	}
 
 }
